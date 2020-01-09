@@ -9,7 +9,6 @@ namespace Vsite.CSharp.Generici
         public static void KretanjeŽivotinja()
         {
 
-            // TODO:011 Klasu ArrayList nadomjestiti generičkom listom List<Životinja>. Otkomentirati naredbu u petlji, prevesti program i provjeriti da nema pogrešaka.
             List<Životnija> živine = new List<Životnija>();
             živine.Add(new Sisavac());
             živine.Add(new Gmaz());
