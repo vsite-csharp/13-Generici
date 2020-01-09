@@ -6,7 +6,7 @@ using System.Text;
 namespace Vsite.CSharp.Generici
 {
     // TODO:031 Dodati potrebne promjene da bi se OSobePoVisini mogle uspoređivati po njihovim visinam.
-    class OsobaPoVisini
+    class OsobaPoVisini: IComparable<OsobaPoVisini>
     {
         public OsobaPoVisini(string ime, int visinaCm)
         {
@@ -22,14 +22,17 @@ namespace Vsite.CSharp.Generici
             return $"{Ime} ({Visina} cm)";
         }
 
+        public int CompareTo(OsobaPoVisini other)
+        {
+           return Visina.CompareTo(other.Visina);
+        }
     }
 
     class OgraničenjeParametra
     {
-        // TODO:030 Definirati metodu Manji tako da vraća manji od dva proslijeđena argumenta pozivom njihove metode CompareTo iz sučelja IComparable<T>.
-        public static T Manji<T>(T prvi, T drugi)
+        public static T Manji<T>(T prvi, T drugi)where T:IComparable<T>
         {
-            throw new NotImplementedException();
+           return prvi.CompareTo(drugi)<0? prvi:drugi;
         }
 
         private static void IspišiManjiBroj(double prvi, double drugi)
@@ -47,9 +50,7 @@ namespace Vsite.CSharp.Generici
             Console.WriteLine($"Između '{prva}' i '{druga}', manji je '{Manji(prva, druga)}'");
         }
 
-        // TODO:031 Pokrenuti program i provjeriti ispis.
 
-        // TODO:032 Pokrenuti testove (3 testa u grupi "TestOgraničenjaParametra" moraju proći)
 
         static void Main(string[] args)
         {
