@@ -21,10 +21,8 @@ namespace Vsite.CSharp.Generici
 
             Console.WriteLine();
 
-            // TODO:021 Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
+            Dictionary<string, int> drugi = brojevi;
 
-
-            // TODO:022 Prevesti program, pokrenuti ga i provjeriti ispis.
 
 
         }
