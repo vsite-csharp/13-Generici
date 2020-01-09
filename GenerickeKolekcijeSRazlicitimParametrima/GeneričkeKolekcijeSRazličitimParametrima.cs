@@ -7,8 +7,6 @@ namespace Vsite.CSharp.Generici
     {
         public static void PridruživanjeDvijuKolekcijaSIstimParametrima()
         {
-            // TODO:020 Pokrenuti program i provjeriti ispise.
-
             Dictionary<string, int> brojevi = new Dictionary<string, int>();
             brojevi.Add("jedan", 1);
             brojevi.Add("dva", 2);

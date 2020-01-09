@@ -11,11 +11,11 @@ namespace Vsite.CSharp.Generici
             ArrayList osobe = new ArrayList();
             osobe.Add(new Osoba("Ivica", new DateTime(1991, 1, 1)));
             osobe.Add(new Osoba("Marica", new DateTime(1993, 1, 1)));
-            osobe.Add(2);
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
 
+            osobe.Add(2);
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
