@@ -5,34 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Generici
+{ 
+    abstract class Životnija
 {
-    class Sisavac
+    public abstract void PokreniSe();
+}
+
+    class Sisavac : Životnija
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Trčim");
         }
+
+    
     }
 
-    class Gmaz
+    class Gmaz : Životnija
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Gmažem");
         }
     }
 
-    class Riba
+    class Riba : Životnija
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Ribam");
         }
     }
 
-    class Ptica
+    class Ptica : Životnija
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("P(t)ičim");
         }
