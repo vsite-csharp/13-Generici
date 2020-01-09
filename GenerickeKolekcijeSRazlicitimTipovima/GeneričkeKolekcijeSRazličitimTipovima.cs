@@ -19,7 +19,7 @@ namespace Vsite.CSharp.Generici
 
             foreach (var živina in živine)
             {
-                živina.pokrenise();
+                //živina.pokrenise();
             }
         }
 
