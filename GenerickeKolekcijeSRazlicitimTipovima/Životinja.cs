@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Generici
 {
+    class Životinje
+    {
+
+    }
+    
     class Sisavac
     {
         public void PokreniSe()
