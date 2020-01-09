@@ -31,8 +31,6 @@ namespace Vsite.CSharp.Generici
                 Console.WriteLine(osoba.Ime);
         }
 
-        // TODO:003 Pokrenuti i provjeriti testove (2 testa u grupi "TestGeneričkeKolekcije" moraju proći)
-
         static void Main(string[] args)
         {
             Console.WriteLine("TipskiNesigurnaKolekcija:");
