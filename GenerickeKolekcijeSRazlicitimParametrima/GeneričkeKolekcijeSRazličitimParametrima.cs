@@ -7,8 +7,6 @@ namespace Vsite.CSharp.Generici
     {
         public static void PridruživanjeDvijuKolekcijaSIstimParametrima()
         {
-            // TODO:020 Pokrenuti program i provjeriti ispise.
-
             Dictionary<string, int> brojevi = new Dictionary<string, int>();
             brojevi.Add("jedan", 1);
             brojevi.Add("dva", 2);
@@ -20,7 +18,7 @@ namespace Vsite.CSharp.Generici
             }
 
             Console.WriteLine();
-
+            Dictionary<string, int> drugi = brojevi;
             // TODO:021 Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
 
 
