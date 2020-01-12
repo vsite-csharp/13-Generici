@@ -7,7 +7,7 @@ namespace Vsite.CSharp.Generici
     {
         public static void PridruživanjeDvijuKolekcijaSIstimParametrima()
         {
-            // TODO:020 Pokrenuti program i provjeriti ispise.
+            // Pokrenuti program i provjeriti ispise.
 
             Dictionary<string, int> brojevi = new Dictionary<string, int>();
             brojevi.Add("jedan", 1);
@@ -21,12 +21,15 @@ namespace Vsite.CSharp.Generici
 
             Console.WriteLine();
 
-            // TODO:021 Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
+            // Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
 
+            Dictionary<string, int> novi = brojevi;
+            foreach (var e in novi)
+            {
+                Console.WriteLine($@"""{e.Key}"" = {e.Value}");
+            }
 
-            // TODO:022 Prevesti program, pokrenuti ga i provjeriti ispis.
-
-
+            Console.WriteLine();
         }
 
         public static void PridruživanjeDvijuKolekcijaSRazličitimParametrima()
@@ -36,9 +39,9 @@ namespace Vsite.CSharp.Generici
             numbers.Add("two", "dva");
             numbers.Add("three", "tri");
 
-            // TODO:023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
-
-            // TODO:024 Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
+            // Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
+            Dictionary<string, int> brojevi;
+            // Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
             //brojevi = numbers;
 
             foreach (var e in numbers)
@@ -46,8 +49,6 @@ namespace Vsite.CSharp.Generici
                 Console.WriteLine($"\"{e.Key}\" = {e.Value}");
             }
         }
-
-        // TODO:025 Pokrenuti i provjeriti testove (test u grupi "TestGeneričkeKolekcijeSRazličitimParametrima" mora proći)
 
         static void Main(string[] args)
         {
