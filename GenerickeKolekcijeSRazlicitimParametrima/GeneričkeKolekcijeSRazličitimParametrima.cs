@@ -44,7 +44,7 @@ namespace Vsite.CSharp.Generici
             //  Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
             Dictionary<string, int> brojevi = new Dictionary<string, int>();
             //  Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
-            brojevi = numbers;
+            // nbrojevi = numbers;
 
             foreach (var e in numbers)
             {
