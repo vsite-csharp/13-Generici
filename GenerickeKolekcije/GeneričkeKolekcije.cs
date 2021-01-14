@@ -17,11 +17,11 @@ namespace Vsite.CSharp.Generici
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
 
-            // TODO:001 U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
-            //osobe.Add(2);
+            // U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add(2);
 
-            //foreach (Osoba osoba in osobe)
-            //    Console.WriteLine(osoba.Ime);
+            foreach (Osoba osoba in osobe)
+                Console.WriteLine(osoba.Ime);
         }
 
         public static void GeneričkaKolekcija()
@@ -32,6 +32,7 @@ namespace Vsite.CSharp.Generici
             osobe.Add(new Osoba("Marica", new DateTime(1983, 12, 3)));
 
             //osobe.Add(2);
+
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
 
