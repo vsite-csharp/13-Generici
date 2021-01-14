@@ -7,7 +7,7 @@ namespace Vsite.CSharp.Generici
     {
         public static void PridruživanjeDvijuKolekcijaSIstimParametrima()
         {
-            // TODO:020 Pokrenuti program i provjeriti ispise.
+            // Pokrenuti program i provjeriti ispise.
 
             Dictionary<string, int> brojevi = new Dictionary<string, int>();
             brojevi.Add("jedan", 1);
@@ -21,16 +21,17 @@ namespace Vsite.CSharp.Generici
 
             Console.WriteLine();
 
-            // TODO:021 Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
-            Dictionary<sring, int> drugi = new Dictionary<sring, int>();
+            // Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
+            Dictionary<string, int> drugi = new Dictionary<string, int>();
             drugi = brojevi;
 
-            foreach (var e in brojevi)
+            foreach (var e in drugi)
+                
             {
                 Console.WriteLine($@"""{e.Key}"" = {e.Value}");
             }
 
-            // TODO:022 Prevesti program, pokrenuti ga i provjeriti ispis.
+            // Prevesti program, pokrenuti ga i provjeriti ispis.
 
 
         }
@@ -58,7 +59,7 @@ namespace Vsite.CSharp.Generici
             }
         }
 
-        // TODO:025 Pokrenuti i provjeriti testove (test u grupi "TestGeneričkeKolekcijeSRazličitimParametrima" mora proći)
+        // Pokrenuti i provjeriti testove (test u grupi "TestGeneričkeKolekcijeSRazličitimParametrima" mora proći)
 
         static void Main(string[] args)
         {
