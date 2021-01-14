@@ -6,33 +6,47 @@ using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Generici
 {
-    class Sisavac
+    abstract class Životinja
     {
-        public void PokreniSe()
+        public abstract void PokreniSe();
+    }
+
+    /// <summary>
+    /// ili
+    /// </summary>
+    //interface Životinja
+    //{
+    //    void PokreniSe();
+    //}
+    //kad je interface onda dole u kodu ne treba override
+
+    class Sisavac :  Životinja
+    {
+        public override void PokreniSe()
         {
             Console.WriteLine("Trčim");
         }
     }
 
-    class Gmaz
+    class Gmaz : Životinja
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Gmažem");
         }
     }
 
-    class Riba
+    class Riba : Životinja
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Ribam");
         }
     }
 
-    class Ptica
+    class Ptica : Životinja
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("P(t)ičim");
         }
