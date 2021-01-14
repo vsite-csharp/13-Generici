@@ -10,7 +10,7 @@ namespace Vsite.CSharp.Generici
     abstract class Životinje
     {
         public abstract void PokreniSe();
-        
+    }
 
     
         class Sisavac : Životinje
