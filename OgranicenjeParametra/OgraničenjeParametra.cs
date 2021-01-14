@@ -27,9 +27,11 @@ namespace Vsite.CSharp.Generici
     class OgraničenjeParametra
     {
         // TODO:030 Definirati metodu Manji tako da vraća manji od dva proslijeđena argumenta pozivom njihove metode CompareTo iz sučelja IComparable<T>.
-        public static T Manji<T>(T prvi, T drugi)
+        public static T Manji<T>(T prvi, T drugi) where T : IComparable<T> 
         {
-            throw new NotImplementedException();
+            if (prvi.CompareTo(drugi) < 0)
+                return prvi;
+            return drugi;
         }
 
         private static void IspišiManjiBroj(double prvi, double drugi)
