@@ -30,7 +30,7 @@ namespace Vsite.CSharp.Generici
             osobe.Add(new Osoba("Ivica", new DateTime(1971, 10, 13)));
             osobe.Add(new Osoba("Marica", new DateTime(1983, 12, 3)));
 
-            osobe.Add(2);
+            //osobe.Add(2);
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
