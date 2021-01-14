@@ -24,7 +24,7 @@ namespace Vsite.CSharp.Generici
             // Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
             Dictionary<string, int> d = brojevi;
 
-            foreach (var e in brojevi)
+            foreach (var e in d)
             {
                 Console.WriteLine($@"""{e.Key}"" = {e.Value}");
             }
