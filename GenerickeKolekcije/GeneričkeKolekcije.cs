@@ -9,14 +9,15 @@ namespace Vsite.CSharp.Generici
         public static void TipskiNesigurnaKolekcija()
         {
             ArrayList osobe = new ArrayList();
-            // TODO:000 U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            // U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add(new Osoba("Ivica", DateTime.Now));
+            osobe.Add(new Osoba("Marica", DateTime.Now));
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
 
-            // TODO:001 U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            // U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add(4);
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
@@ -25,11 +26,22 @@ namespace Vsite.CSharp.Generici
         public static void GeneričkaKolekcija()
         {
             List<Osoba> osobe = new List<Osoba>();
-            // TODO:002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
+            // Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add(new Osoba("Ivica", DateTime.Now));
+            osobe.Add(new Osoba("Marica", DateTime.Now));
 
+
+            foreach (Osoba osoba in osobe)
+                Console.WriteLine(osoba.Ime);
+
+            // ovo ispod nemoze jer je lista definirana kao da prima samo instance tipa osobe
+            //osobe.Add(4);
+
+            foreach (Osoba osoba in osobe)
+                  Console.WriteLine(osoba.Ime);
         }
 
-        // TODO:003 Pokrenuti i provjeriti testove (2 testa u grupi "TestGeneričkeKolekcije" moraju proći)
+        // Pokrenuti i provjeriti testove (2 testa u grupi "TestGeneričkeKolekcije" moraju proći)
 
         static void Main(string[] args)
         {
