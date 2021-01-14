@@ -26,7 +26,7 @@ namespace Vsite.CSharp.Generici
         public static void GeneričkaKolekcija()
         {
             List<Osoba> osobe = new List<Osoba>();
-            // TODO:002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
+            //  Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
             osobe.Add(new Osoba("Ivica", new DateTime(1971, 10, 13)));
             osobe.Add(new Osoba("Marica", new DateTime(1983, 12, 3)));
 
@@ -37,7 +37,7 @@ namespace Vsite.CSharp.Generici
 
         }
 
-        // TODO:003 Pokrenuti i provjeriti testove (2 testa u grupi "TestGeneričkeKolekcije" moraju proći)
+        // Pokrenuti i provjeriti testove (2 testa u grupi "TestGeneričkeKolekcije" moraju proći)
 
         static void Main(string[] args)
         {
