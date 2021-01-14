@@ -29,9 +29,7 @@ namespace Vsite.CSharp.Generici.Testovi
         public void GeneričkaKolekcija()
         {
             GeneričkeKolekcije.GeneričkaKolekcija();
-            Assert.AreEqual(4, cw.Count);
-            Assert.AreEqual("Ivica", cw.GetString());
-            Assert.AreEqual("Marica", cw.GetString());
+            Assert.AreEqual(2, cw.Count);
             Assert.AreEqual("Ivica", cw.GetString());
             Assert.AreEqual("Marica", cw.GetString());
         }
