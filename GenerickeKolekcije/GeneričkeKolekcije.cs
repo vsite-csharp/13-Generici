@@ -9,14 +9,15 @@ namespace Vsite.CSharp.Generici
         public static void TipskiNesigurnaKolekcija()
         {
             ArrayList osobe = new ArrayList();
-            // TODO:000 U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            // :000 U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add(new Osoba("Jakov", new DateTime(1823, 4, 5)));
+            osobe.Add(new Osoba("Mirko", new DateTime(1623, 5, 5)));
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
 
-            // TODO:001 U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            // :001 U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add(23);
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
@@ -25,11 +26,16 @@ namespace Vsite.CSharp.Generici
         public static void GeneričkaKolekcija()
         {
             List<Osoba> osobe = new List<Osoba>();
-            // TODO:002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            // :002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add(new Osoba("Jakov", new DateTime(1823, 4, 5)));
+            osobe.Add(new Osoba("Mirko", new DateTime(1623, 5, 5)));
+            foreach (Osoba osoba in osobe)
+                Console.WriteLine(osoba.Ime);
+            foreach (Osoba osoba in osobe)
+                Console.WriteLine(osoba.Ime);
         }
 
-        // TODO:003 Pokrenuti i provjeriti testove (2 testa u grupi "GeneričkeKolekcije" moraju proći)
+        // :003 Pokrenuti i provjeriti testove (2 testa u grupi "GeneričkeKolekcije" moraju proći)
 
         static void Main(string[] args)
         {
