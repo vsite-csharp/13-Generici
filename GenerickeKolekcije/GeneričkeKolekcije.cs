@@ -10,8 +10,8 @@ namespace Vsite.CSharp.Generici
         {
             ArrayList osobe = new ArrayList();
             // :000 U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
-            osobe.Add(new Osoba("Jakov", new DateTime(1823, 4, 5)));
-            osobe.Add(new Osoba("Mirko", new DateTime(1623, 5, 5)));
+            osobe.Add(new Osoba("Ivica", new DateTime(1823, 4, 5)));
+            osobe.Add(new Osoba("Marica", new DateTime(1623, 5, 5)));
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
@@ -27,8 +27,8 @@ namespace Vsite.CSharp.Generici
         {
             List<Osoba> osobe = new List<Osoba>();
             // :002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
-            osobe.Add(new Osoba("Jakov", new DateTime(1823, 4, 5)));
-            osobe.Add(new Osoba("Mirko", new DateTime(1623, 5, 5)));
+            osobe.Add(new Osoba("Ivica", new DateTime(1823, 4, 5)));
+            osobe.Add(new Osoba("Marica", new DateTime(1623, 5, 5)));
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
             foreach (Osoba osoba in osobe)
