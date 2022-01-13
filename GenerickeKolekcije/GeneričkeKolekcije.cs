@@ -9,27 +9,39 @@ namespace Vsite.CSharp.Generici
         public static void TipskiNesigurnaKolekcija()
         {
             ArrayList osobe = new ArrayList();
-            // TODO:000 U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
-
-
-            foreach (Osoba osoba in osobe)
-                Console.WriteLine(osoba.Ime);
-
-            // TODO:001 U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            // 000 U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add(Osoba("Ivica", new DateTime(1980, 2, 29)));
+            osobe.Add(Osoba("Ivica", new DateTime(1980,2,29)));
+            osobe.Add(Osoba("Marica", new DateTime(1980,2,28)));
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
+
+            // 001 U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
+            //osobe.Add(23);
+
+            foreach (Osoba osoba in osobe)
+                Console.WriteLine(osoba.Ime);
+        }
+
+        private static object Osoba(string v, DateTime dateTime)
+        {
+            throw new NotImplementedException();
         }
 
         public static void GeneričkaKolekcija()
         {
             List<Osoba> osobe = new List<Osoba>();
-            // TODO:002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            // 002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add((Osoba)Osoba("Ivica", new DateTime(1980,2,29)));
+            osobe.Add((Osoba)Osoba("Marica", new DateTime(1980,2,28)));
+            //osobe.Add(2);
+            foreach (Osoba osoba in osobe)
+                Console.WriteLine(osoba.Ime);
+            
         }
 
-        // TODO:003 Pokrenuti i provjeriti testove (2 testa u grupi "GeneričkeKolekcije" moraju proći)
+        // 003 Pokrenuti i provjeriti testove (2 testa u grupi "GeneričkeKolekcije" moraju proći)
 
         static void Main(string[] args)
         {
