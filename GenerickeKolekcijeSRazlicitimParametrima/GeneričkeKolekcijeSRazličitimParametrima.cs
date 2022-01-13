@@ -42,7 +42,7 @@ namespace Vsite.CSharp.Generici
             // TODO:023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
             //Dictionary<string, int> numbers2 = 
             // TODO:024 Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
-            brojevi = numbers;
+            //brojevi = numbers;
 
             foreach (var e in numbers)
             {
