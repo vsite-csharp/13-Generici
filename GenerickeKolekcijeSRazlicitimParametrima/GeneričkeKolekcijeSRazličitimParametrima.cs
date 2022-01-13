@@ -39,9 +39,9 @@ namespace Vsite.CSharp.Generici
             numbers.Add("two", "dva");
             numbers.Add("three", "tri");
 
-            // TODO:023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
+            // :023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
 
-            // TODO:024 Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
+            // :024 Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
             //brojevi = numbers;
 
             foreach (var e in numbers)
@@ -50,7 +50,7 @@ namespace Vsite.CSharp.Generici
             }
         }
 
-        // TODO:025 Pokrenuti i provjeriti testove (test u grupi "GeneričkeKolekcijeSRazličitimParametrima" mora proći)
+        // :025 Pokrenuti i provjeriti testove (test u grupi "GeneričkeKolekcijeSRazličitimParametrima" mora proći)
 
         static void Main(string[] args)
         {
