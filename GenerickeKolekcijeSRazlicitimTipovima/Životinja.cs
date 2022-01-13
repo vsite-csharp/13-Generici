@@ -16,7 +16,7 @@ namespace Vsite.CSharp.Generici
 
         public override void PokreniSe()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Trčim");
         }
     }
 
@@ -25,7 +25,7 @@ namespace Vsite.CSharp.Generici
 
         public override void PokreniSe()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Gmažem");
         }
     }
 
