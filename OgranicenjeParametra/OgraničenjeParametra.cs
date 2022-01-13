@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Vsite.CSharp.Generici
 {
-    // TODO:031 Dodati potrebne promjene da bi se OSobePoVisini mogle uspoređivati po njihovim visinam.
+    // :031 Dodati potrebne promjene da bi se OSobePoVisini mogle uspoređivati po njihovim visinam.
     class OsobaPoVisini : IComparable<OsobaPoVisini>
     {
         public OsobaPoVisini(string ime, int visinaCm)
