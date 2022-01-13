@@ -38,7 +38,7 @@ namespace Vsite.CSharp.Generici
                 Console.WriteLine(osoba.Ime);
         }
 
-        // TODO:003 Pokrenuti i provjeriti testove (2 testa u grupi "GeneričkeKolekcije" moraju proći)
+        // Pokrenuti i provjeriti testove (2 testa u grupi "GeneričkeKolekcije" moraju proći)
 
         static void Main(string[] args)
         {
