@@ -39,7 +39,7 @@ namespace Vsite.CSharp.Generici
             numbers.Add("two", "dva");
             numbers.Add("three", "tri");
 
-            // TODO:023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
+            // :023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
             //Dictionary<string, int> numbers2 = new Dictionary<string, int>(numbers);
             // :024 Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
             //brojevi = numbers;
