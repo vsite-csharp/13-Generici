@@ -8,12 +8,12 @@ namespace Vsite.CSharp.Generici
 {
     abstract class Životinja
     {
-        public override void PokreniSe();
+        public abstract void PokreniSe();
     }
 
     class Sisavac : Životinja
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Trčim");
         }
