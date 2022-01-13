@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Generici
 {
-    class Sisavac
+    abstract class Životinja
+    {
+        public override void PokreniSe();
+    }
+
+    class Sisavac : Životinja
     {
         public void PokreniSe()
         {
@@ -14,25 +19,25 @@ namespace Vsite.CSharp.Generici
         }
     }
 
-    class Gmaz
+    class Gmaz : Životinja
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Gmažem");
         }
     }
 
-    class Riba
+    class Riba : Životinja
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Ribam");
         }
     }
 
-    class Ptica
+    class Ptica : Životinja
     {
-        public void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("P(t)ičim");
         }

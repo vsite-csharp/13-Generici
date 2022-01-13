@@ -22,8 +22,12 @@ namespace Vsite.CSharp.Generici
             Console.WriteLine();
 
             // TODO:021 Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
-
+            Dictionary<string, int> brojevi2 = new Dictionary<string, int>(brojevi);
             // TODO:022 Prevesti program, pokrenuti ga i provjeriti ispis.
+            foreach (var e in brojevi2)
+            {
+                Console.WriteLine($@"""{e.Key}"" = {e.Value}");
+            }
 
         }
 
@@ -35,7 +39,7 @@ namespace Vsite.CSharp.Generici
             numbers.Add("three", "tri");
 
             // TODO:023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
-
+            //Dictionary<string, int> numbers2 = new Dictionary<string, int>(numbers);
             // TODO:024 Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
             //brojevi = numbers;
 
