@@ -22,7 +22,7 @@ namespace Vsite.CSharp.Generici
             Console.WriteLine();
 
             //  Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
-            Dictionary<string, int> mojiBrojevi = brojevi;
+            Dictionary<string, int> mojiBrojevi = new Dictionary<string, int>(brojevi);
             foreach (var e in mojiBrojevi)
             {
                 Console.WriteLine($@"""{e.Key}"" = {e.Value}");
