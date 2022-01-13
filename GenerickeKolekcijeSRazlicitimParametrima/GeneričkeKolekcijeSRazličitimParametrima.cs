@@ -7,7 +7,7 @@ namespace Vsite.CSharp.Generici
     {
         public static void PridruživanjeDvijuKolekcijaSIstimParametrima()
         {
-            // TODO:020 Pokrenuti program i provjeriti ispise.
+            // :020 Pokrenuti program i provjeriti ispise.
 
             Dictionary<string, int> brojevi = new Dictionary<string, int>();
             brojevi.Add("jedan", 1);
@@ -21,10 +21,15 @@ namespace Vsite.CSharp.Generici
 
             Console.WriteLine();
 
-            // TODO:021 Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
+            // :021 Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
+            Dictionary<string, int> brojevi2 = new Dictionary<string, int>(brojevi);
+            // :022 Prevesti program, pokrenuti ga i provjeriti ispis.
+            foreach (var e in brojevi2)
+            {
+                Console.WriteLine($@"""{e.Key}"" = {e.Value}");
+            }
 
-            // TODO:022 Prevesti program, pokrenuti ga i provjeriti ispis.
-
+            Console.WriteLine();
         }
 
         public static void PridruživanjeDvijuKolekcijaSRazličitimParametrima()
