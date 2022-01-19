@@ -10,15 +10,14 @@ namespace Vsite.CSharp.Generici
         {
             ArrayList osobe = new ArrayList();
             //:000 U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
-            osobe.Add(new Osoba("Ivica",new DateTime(5, 11, 1999)));
-            osobe.Add(new Osoba("Marica",new DateTime(5, 1, 1979)));
+            osobe.Add(new Osoba("Ivica",new DateTime(1999, 4, 10)));
+            osobe.Add(new Osoba("Marica",new DateTime(1979, 7, 17)));
 
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
 
             //:001 U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
-            osobe.Add(3);
-
+            osobe.Add(56);
             foreach (Osoba osoba in osobe)
                 Console.WriteLine(osoba.Ime);
         }
@@ -26,11 +25,17 @@ namespace Vsite.CSharp.Generici
         public static void GeneričkaKolekcija()
         {
             List<Osoba> osobe = new List<Osoba>();
-            // TODO:002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
+            //:002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
+            osobe.Add(new Osoba("Ivica", new DateTime(1999, 4, 10)));
+            osobe.Add(new Osoba("Marica", new DateTime(1979, 7, 17)));
 
+            //osobe.Add(56);
+
+            foreach (Osoba osoba in osobe)
+                Console.WriteLine(osoba.Ime);
         }
 
-        // TODO:003 Pokrenuti i provjeriti testove (2 testa u grupi "GeneričkeKolekcije" moraju proći)
+        //:003 Pokrenuti i provjeriti testove (2 testa u grupi "GeneričkeKolekcije" moraju proći)
 
         static void Main(string[] args)
         {
