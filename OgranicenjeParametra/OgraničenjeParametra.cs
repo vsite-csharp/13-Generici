@@ -49,7 +49,7 @@ namespace Vsite.CSharp.Generici
 
         // TODO:031 Pokrenuti program i provjeriti ispis.
 
-        // TODO:033 Pokrenuti testove (3 testa u grupi "TestOgraničenjaParametra" moraju proći)
+        // TODO:033 Pokrenuti testove (3 testa u grupi "OgraničenjaParametra" moraju proći)
 
         static void Main(string[] args)
         {

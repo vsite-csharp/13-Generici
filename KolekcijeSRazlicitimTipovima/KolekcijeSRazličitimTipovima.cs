@@ -23,7 +23,7 @@ namespace Vsite.CSharp.Generici
             }
         }
 
-        // TODO:012 Pokrenuti i provjeriti testove (test u grupi "GeneričkeKolekcijeSaČlanovimaRazličitihTipova" mora proći)
+        // TODO:012 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSaČlanovimaRazličitihTipova" mora proći)
 
         static void Main(string[] args)
         {
