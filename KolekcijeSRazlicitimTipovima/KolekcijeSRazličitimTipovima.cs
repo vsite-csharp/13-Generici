@@ -8,22 +8,24 @@ namespace Vsite.CSharp.Generici
     {
         public static void KretanjeŽivotinja()
         {
-            // TODO:010 U datoteci Životinja.cs definirati apstraktnu klasu Životinja s apstraktnom (dakle virtualnom!) metodom void PokreniSe(). Proglasiti tu klasu baznom klasom za klase Gmaz, Ptica, Riba i Sisavac te prilagoditi potpise njihovih metoda PokreniSe.
+            // TODO:010 U datoteci Životinja.cs definirati sučelje (interface) IŽivotinja s metodom void PokreniSe().
+            // TODO:011 U deklariracijama klasa Gmaz, Ptica, Riba i Sisavac navesti da one implementiraju sučelje IŽivotinja.
 
-            // TODO:011 Klasu ArrayList nadomjestiti generičkom listom List<Životinja>. Otkomentirati naredbu u petlji, prevesti program i provjeriti da nema pogrešaka.
-            ArrayList živine = new ArrayList();
+            // TODO:012 Klasu ArrayList nadomjestiti generičkom listom List<IŽivotinja>.
+            var živine = new ArrayList();
             živine.Add(new Sisavac());
             živine.Add(new Gmaz());
             živine.Add(new Riba());
             živine.Add(new Ptica());
 
+            // TODO:013 Otkomentirati naredbu u petlji, prevesti program, provjeriti da nema pogrešaka te pokrenuti program.
             foreach (var živina in živine)
             {
                 //živina.PokreniSe();
             }
         }
 
-        // TODO:012 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSaČlanovimaRazličitihTipova" mora proći)
+        // TODO:014 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSaČlanovimaRazličitihTipova" mora proći)
 
         static void Main(string[] args)
         {

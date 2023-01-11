@@ -13,13 +13,17 @@ namespace Vsite.CSharp.Generici
 
 
             foreach (Osoba osoba in osobe)
+            {
                 Console.WriteLine(osoba.Ime);
+            }
 
             // TODO:001 U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
 
 
             foreach (Osoba osoba in osobe)
+            {
                 Console.WriteLine(osoba.Ime);
+            }
         }
 
         public static void GeneričkaKolekcija()

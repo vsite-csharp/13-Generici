@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Vsite.CSharp.Generici
 {
-    // TODO:032 Dodati potrebne promjene da bi se OSobePoVisini mogle uspoređivati po njihovim visinam.
+    // TODO:031 Dodati potrebne promjene da bi se OSobePoVisini mogle uspoređivati po njihovim visinama.
     class OsobaPoVisini
     {
         public OsobaPoVisini(string ime, int visinaCm)
@@ -47,7 +47,7 @@ namespace Vsite.CSharp.Generici
             Console.WriteLine($"Između '{prva}' i '{druga}', manji je '{Manji(prva, druga)}'");
         }
 
-        // TODO:031 Pokrenuti program i provjeriti ispis.
+        // TODO:032 Pokrenuti program i provjeriti ispis.
 
         // TODO:033 Pokrenuti testove (3 testa u grupi "OgraničenjaParametra" moraju proći)
 
