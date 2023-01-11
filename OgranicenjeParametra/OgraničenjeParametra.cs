@@ -59,8 +59,7 @@ namespace Vsite.CSharp.Generici
             IspišiManjuOsobu(new OsobaPoVisini("Pero", 193), new OsobaPoVisini("Maksimilijan", 157));
             IspišiManjuOsobu(new OsobaPoVisini("Ante", 178), new OsobaPoVisini("Marko", 171));
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

@@ -53,8 +53,7 @@ namespace Vsite.CSharp.Generici
 
             PridruživanjeDvijuKolekcijaSRazličitimParametrima();
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

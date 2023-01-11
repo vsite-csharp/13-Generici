@@ -45,11 +45,10 @@ namespace Vsite.CSharp.Generici
                 Console.WriteLine(e.ToString());
             }
 
-            Console.WriteLine("GeneričkaKolekcija:");
+            Console.WriteLine("\nGeneričkaKolekcija:");
             GeneričkaKolekcija();
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

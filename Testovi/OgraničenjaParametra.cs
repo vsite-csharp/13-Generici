@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Vsite.CSharp.Generici.Testovi
+﻿namespace Vsite.CSharp.Generici.Testovi
 {
     [TestClass]
     public class OgraničenjaParametra

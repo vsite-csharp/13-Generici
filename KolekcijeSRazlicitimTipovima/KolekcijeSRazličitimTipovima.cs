@@ -31,8 +31,7 @@ namespace Vsite.CSharp.Generici
 
             KretanjeŽivotinja();
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Vsite.CSharp.Generici.Testovi
+﻿namespace Vsite.CSharp.Generici.Testovi
 {
     [TestClass]
     public class GeneričkeKolekcije : ConsoleTest
@@ -16,11 +13,11 @@ namespace Vsite.CSharp.Generici.Testovi
             }
             catch (Exception)
             {
-                Assert.AreEqual(4, cw.Count);
-                Assert.AreEqual("Ivica", cw.GetString());
-                Assert.AreEqual("Marica", cw.GetString());
-                Assert.AreEqual("Ivica", cw.GetString());
-                Assert.AreEqual("Marica", cw.GetString());
+                Assert.AreEqual(4, cw?.Count);
+                Assert.AreEqual("Ivica", cw?.GetString());
+                Assert.AreEqual("Marica", cw?.GetString());
+                Assert.AreEqual("Ivica", cw?.GetString());
+                Assert.AreEqual("Marica", cw?.GetString());
                 throw;
             }
         }
@@ -29,7 +26,7 @@ namespace Vsite.CSharp.Generici.Testovi
         public void GeneričkaKolekcija()
         {
             Generici.GeneričkeKolekcije.GeneričkaKolekcija();
-            Assert.IsTrue(cw.Count == 2 || cw.Count == 4);
+            Assert.IsTrue(cw?.Count == 2 || cw?.Count == 4);
             Assert.AreEqual("Ivica", cw.GetString());
             Assert.AreEqual("Marica", cw.GetString());
             if (cw.Count == 4)

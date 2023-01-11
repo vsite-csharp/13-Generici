@@ -1,8 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections;
-using System.IO;
-using System.Linq;
+﻿using System.Collections;
 
 namespace Vsite.CSharp.Generici.Testovi
 {
