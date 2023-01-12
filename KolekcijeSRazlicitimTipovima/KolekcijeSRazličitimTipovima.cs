@@ -12,7 +12,7 @@ namespace Vsite.CSharp.Generici
             // TODO:011 U deklariracijama klasa Gmaz, Ptica, Riba i Sisavac navesti da one implementiraju sučelje IŽivotinja.
 
             // TODO:012 Klasu ArrayList nadomjestiti generičkom listom List<IŽivotinja>.
-            var živine = new ArrayList();
+            var živine = new List<IŽivotinja>();
             živine.Add(new Sisavac());
             živine.Add(new Gmaz());
             živine.Add(new Riba());
@@ -21,7 +21,7 @@ namespace Vsite.CSharp.Generici
             // TODO:013 Otkomentirati naredbu u petlji, prevesti program, provjeriti da nema pogrešaka te pokrenuti program.
             foreach (var živina in živine)
             {
-                //živina.PokreniSe();
+                živina.PokreniSe();
             }
         }
 

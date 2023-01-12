@@ -1,6 +1,10 @@
 ﻿namespace Vsite.CSharp.Generici
 {
-    class Sisavac
+    interface IŽivotinja
+    {
+        void PokreniSe();
+    }
+    class Sisavac: IŽivotinja
     {
         public void PokreniSe()
         {
@@ -8,7 +12,7 @@
         }
     }
 
-    class Gmaz
+    class Gmaz : IŽivotinja
     {
         public void PokreniSe()
         {
@@ -16,7 +20,7 @@
         }
     }
 
-    class Riba
+    class Riba : IŽivotinja
     {
         public void PokreniSe()
         {
@@ -24,7 +28,7 @@
         }
     }
 
-    class Ptica
+    class Ptica : IŽivotinja
     {
         public void PokreniSe()
         {
