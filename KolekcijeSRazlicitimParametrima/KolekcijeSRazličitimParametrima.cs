@@ -50,7 +50,7 @@ namespace Vsite.CSharp.Generici
             }
         }
 
-        // TODO:025 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSRazličitimParametrima" mora proći)
+        // 025 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSRazličitimParametrima" mora proći)
 
         static void Main(string[] args)
         {
