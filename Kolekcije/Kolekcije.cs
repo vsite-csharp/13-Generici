@@ -31,7 +31,7 @@ namespace Vsite.CSharp.Generici
         public static void GeneričkaKolekcija()
         {
             List<Osoba> osobe = new List<Osoba>();
-            // TODO:002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
+            // :002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
             osobe.Add(new Osoba("Ivica", new DateTime(1463, 4, 23)));
             osobe.Add(new Osoba("Marica", new DateTime(1461, 4, 23)));
 
