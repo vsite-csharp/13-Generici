@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Vsite.CSharp.Generici
+﻿namespace Vsite.CSharp.Generici
 {
-    class GeneričkeKolekcijeSRazličitimParametrima
+    internal static class GeneričkeKolekcijeSRazličitimParametrima
     {
         public static void PridruživanjeDvijuKolekcijaSIstimParametrima()
         {
@@ -47,7 +44,7 @@ namespace Vsite.CSharp.Generici
 
         // TODO:025 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSRazličitimParametrima" mora proći)
 
-        static void Main(string[] args)
+        static void Main()
         {
             PridruživanjeDvijuKolekcijaSIstimParametrima();
 

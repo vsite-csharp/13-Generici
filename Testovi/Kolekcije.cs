@@ -4,36 +4,25 @@
     public class GeneričkeKolekcije : ConsoleTest
     {
         [TestMethod]
-        [ExpectedException(typeof(InvalidCastException))]
-        public void TipskiNesigurneKolekcije()
+        public void TestGeneričkaKolekcijeZaJednuOsobu()
         {
-            try
-            {
-                Generici.GeneričkeKolekcije.TipskiNesigurnaKolekcija();
-            }
-            catch (Exception)
-            {
-                Assert.AreEqual(4, cw?.Count);
-                Assert.AreEqual("Ivica", cw?.GetString());
-                Assert.AreEqual("Marica", cw?.GetString());
-                Assert.AreEqual("Ivica", cw?.GetString());
-                Assert.AreEqual("Marica", cw?.GetString());
-                throw;
-            }
+            var jsv = new Generici.JelovnikStareVještice();
+            jsv.DodajJelo(new Osoba("Marica", DateTime.Now));
+            jsv.IspišiDnevniMenu();
+            Assert.IsTrue(cw?.Count == 1);
+            Assert.AreEqual("Ivica", cw.GetString());
         }
 
         [TestMethod]
-        public void GeneričkaKolekcija()
+        public void TestGeneričkaKolekcijeZaDvijeOsobe()
         {
-            Generici.GeneričkeKolekcije.GeneričkaKolekcija();
-            Assert.IsTrue(cw?.Count == 2 || cw?.Count == 4);
+            var jsv = new Generici.JelovnikStareVještice();
+            jsv.DodajJelo(new Osoba("Ivica", DateTime.Now));
+            jsv.DodajJelo(new Osoba("Marica", DateTime.Now));
+            jsv.IspišiDnevniMenu();
+            Assert.IsTrue(cw?.Count == 2);
             Assert.AreEqual("Ivica", cw.GetString());
             Assert.AreEqual("Marica", cw.GetString());
-            if (cw.Count == 4)
-            {
-                Assert.AreEqual("Ivica", cw.GetString());
-                Assert.AreEqual("Marica", cw.GetString());
-            }
         }
     }
 }

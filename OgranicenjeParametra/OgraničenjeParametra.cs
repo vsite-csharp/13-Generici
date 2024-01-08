@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Vsite.CSharp.Generici
+﻿namespace Vsite.CSharp.Generici
 {
     // TODO:031 Dodati potrebne promjene da bi se OSobePoVisini mogle uspoređivati po njihovim visinama.
     class OsobaPoVisini
@@ -24,9 +19,9 @@ namespace Vsite.CSharp.Generici
 
     }
 
-    class OgraničenjeParametra
+    internal static class OgraničenjeParametra
     {
-        // TODO:030 Implementirati metodu Manji tako da vraća manji od dva proslijeđena argumenta pozivom njihove metode CompareTo iz sučelja IComparable<T>.
+        // TODO:030 Implementirati metodu Manji tako da vraća manji od dva prosljeđena argumenta pozivom njihove metode CompareTo iz sučelja IComparable<T>.
         public static T Manji<T>(T prvi, T drugi)
         {
             throw new NotImplementedException();

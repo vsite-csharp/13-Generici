@@ -1,56 +1,36 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace Vsite.CSharp.Generici
+﻿namespace Vsite.CSharp.Generici
 {
-    class GeneričkeKolekcije
+    internal class JelovnikStareVještice
     {
-        public static void TipskiNesigurnaKolekcija()
+        // TODO:000 U klasu dodati kao član generičku klasu List<T> s elementima tipa Osoba.
+
+        // TODO:001 U metodi DodajJelo implementirati dodavanje osobe u listu.
+        public void DodajJelo(Osoba osoba)
         {
-            ArrayList osobe = new ArrayList();
-            // TODO:000 U listu 'osobe' dodati dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja. Prevesti program, pokrenuti ga i provjeriti ispis.
-
-
-            foreach (Osoba osoba in osobe)
-            {
-                Console.WriteLine(osoba.Ime);
-            }
-
-            // TODO:001 U listu 'osobe' dodati objekt nekog drugog tipa. Prevesti program, pokrenuti ga i provjeriti ispis.
-
-
-            foreach (Osoba osoba in osobe)
-            {
-                Console.WriteLine(osoba.Ime);
-            }
-        }
-
-        public static void GeneričkaKolekcija()
-        {
-            List<Osoba> osobe = new List<Osoba>();
-            // TODO:002 Ponoviti dodavanja i ispise iz gornje metode. Prevesti program, pokrenuti ga i provjeriti ispis.
 
         }
 
-        // TODO:003 Pokrenuti i provjeriti testove (2 testa u grupi "Kolekcije" moraju proći)
+        // TODO:002 U metodi IspišiDnevniMenu implementirati kod koji će ispisati imena svih osoba.
+        public void IspišiDnevniMenu()
+        {
 
-        static void Main(string[] args)
+        }
+    }
+
+    internal static class GeneričkeKolekcije
+    {
+
+        static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            Console.WriteLine("TipskiNesigurnaKolekcija:");
-            try
-            {
-                TipskiNesigurnaKolekcija();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
+            var jsv = new JelovnikStareVještice();
 
-            Console.WriteLine("\nGeneričkaKolekcija:");
-            GeneričkaKolekcija();
+            // TODO:003 dodati pozive metode DodajJelo za dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja.
+
+            // TODO:004 Prevesti program, pokrenuti ga i provjeriti ispis.
+            // TODO:005 Pokrenuti i provjeriti testove (Oba testa u grupi "Kolekcije" moraju proći)
+            jsv.IspišiDnevniMenu();
 
             Console.WriteLine("\nGOTOVO!!!");
         }

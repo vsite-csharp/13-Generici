@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.Generici
+﻿namespace Vsite.CSharp.Generici
 {
     class Osoba
     {
