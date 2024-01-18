@@ -14,7 +14,10 @@
         // TODO:002 U metodi IspišiDnevniMenu implementirati kod koji će ispisati imena svih osoba.
         public void IspišiDnevniMenu()
         {
-
+            foreach (var o in osobe)
+            { 
+                Console.WriteLine(o.Ime); 
+            }
         }
         private readonly List<Osoba> osobe=new List<Osoba>();
     }

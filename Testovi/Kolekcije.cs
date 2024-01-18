@@ -7,7 +7,7 @@
         public void TestGeneričkaKolekcijeZaJednuOsobu()
         {
             var jsv = new Generici.JelovnikStareVještice();
-            jsv.DodajJelo(new Osoba("Marica", DateTime.Now));
+            jsv.DodajJelo(new Osoba("Ivica", DateTime.Now));
             jsv.IspišiDnevniMenu();
             Assert.IsTrue(cw?.Count == 1);
             Assert.AreEqual("Ivica", cw.GetString());
