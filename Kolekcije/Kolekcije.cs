@@ -2,19 +2,26 @@
 {
     internal class JelovnikStareVještice
     {
-        // TODO:000 U klasu dodati kao član generičku klasu List<T> s elementima tipa Osoba.
+        // :000 U klasu dodati kao član generičku klasu List<T> s elementima tipa Osoba.
 
-        // TODO:001 U metodi DodajJelo implementirati dodavanje osobe u listu.
+        // :001 U metodi DodajJelo implementirati dodavanje osobe u listu.
         public void DodajJelo(Osoba osoba)
         {
+            osobe.Add(osoba);
 
         }
 
         // TODO:002 U metodi IspišiDnevniMenu implementirati kod koji će ispisati imena svih osoba.
         public void IspišiDnevniMenu()
         {
+            foreach (var o in osobe)
+            {
+                Console.WriteLine(o.Ime);
+            }
 
         }
+
+        private readonly List<Osoba> osobe = new List<Osoba>();
     }
 
     internal static class GeneričkeKolekcije
@@ -27,6 +34,8 @@
             var jsv = new JelovnikStareVještice();
 
             // TODO:003 dodati pozive metode DodajJelo za dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja.
+            jsv.DodajJelo(new Osoba("Ivica", new DateTime(1957, 12, 13)));
+            jsv.DodajJelo(new Osoba("Marica", new DateTime(2003, 12, 13)));
 
             // TODO:004 Prevesti program, pokrenuti ga i provjeriti ispis.
             // TODO:005 Pokrenuti i provjeriti testove (Oba testa u grupi "Kolekcije" moraju proći)
