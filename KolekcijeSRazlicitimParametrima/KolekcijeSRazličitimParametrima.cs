@@ -4,7 +4,7 @@
     {
         public static void PridruživanjeDvijuKolekcijaSIstimParametrima()
         {
-            // TODO:020 Pokrenuti program i provjeriti ispise.
+            // 020 Pokrenuti program i provjeriti ispise.
 
             Dictionary<string, int> brojevi = new Dictionary<string, int>();
             brojevi.Add("jedan", 1);
@@ -18,9 +18,9 @@
 
             Console.WriteLine();
 
-            // TODO:021 Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
+            // 021 Inicijalizirati novi rječnik tipa Dictionary<string, int>, pridružiti mu sadržaj rječnika 'brojevi' te ponoviti ispis svih članova novog rječnika. 
 
-            // TODO:022 Prevesti program, pokrenuti ga i provjeriti ispis.
+            // 022 Prevesti program, pokrenuti ga i provjeriti ispis.
 
         }
 
@@ -31,10 +31,13 @@
             numbers.Add("two", "dva");
             numbers.Add("three", "tri");
 
-            // TODO:023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
-
-            // TODO:024 Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
-            //brojevi = numbers;
+            // 023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
+            Dictionary<string, int> brojevi = new Dictionary<string, int>();
+            numbers.Add("one", "jedan");
+            numbers.Add("two", "dva");
+            numbers.Add("three", "tri");
+            // 024 Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
+            //brojevi = numbers; //greška
 
             foreach (var e in numbers)
             {
@@ -42,7 +45,7 @@
             }
         }
 
-        // TODO:025 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSRazličitimParametrima" mora proći)
+        // 025 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSRazličitimParametrima" mora proći)
 
         static void Main()
         {
