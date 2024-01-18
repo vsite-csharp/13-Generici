@@ -10,7 +10,7 @@
             jsv.DodajJelo(new Osoba("Marica", DateTime.Now));
             jsv.IspišiDnevniMenu();
             Assert.IsTrue(cw?.Count == 1);
-            Assert.AreEqual("Ivica", cw.GetString());
+            Assert.AreEqual("Marica", cw.GetString());
         }
 
         [TestMethod]
