@@ -1,7 +1,7 @@
 ﻿namespace Vsite.CSharp.Generici
 {
     // TODO:031 Dodati potrebne promjene da bi se OSobePoVisini mogle uspoređivati po njihovim visinama.
-    class OsobaPoVisini
+    class OsobaPoVisini : IComparable<OsobaPoVisini>
     {
         public OsobaPoVisini(string ime, int visinaCm)
         {
@@ -17,14 +17,18 @@
             return $"{Ime} ({Visina} cm)";
         }
 
-    }
+		public int CompareTo(OsobaPoVisini? other)
+		{
+            return Visina - other!.Visina;
+		}
+	}
 
     internal static class OgraničenjeParametra
     {
-        // TODO:030 Implementirati metodu Manji tako da vraća manji od dva prosljeđena argumenta pozivom njihove metode CompareTo iz sučelja IComparable<T>.
-        public static T Manji<T>(T prvi, T drugi)
+        // 030 Implementirati metodu Manji tako da vraća manji od dva prosljeđena argumenta pozivom njihove metode CompareTo iz sučelja IComparable<T>.
+        public static T Manji<T>(T prvi, T drugi) where T:IComparable<T>
         {
-            throw new NotImplementedException();
+            return prvi.CompareTo(drugi) < 0 ? prvi : drugi;
         }
 
         private static void IspišiManjiBroj(double prvi, double drugi)
