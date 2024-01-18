@@ -32,7 +32,10 @@
             numbers.Add("three", "tri");
 
             // TODO:023 Inicijalizirati novi rječnik 'brojevi' tipa Dictionary<string, int>
-
+            Dictionary<string, string> brojevi = new Dictionary<string, string>();
+            numbers.Add("one", "jedan");
+            numbers.Add("two", "dva");
+            numbers.Add("three", "tri");
             // TODO:024 Otkomentirati donju naredbu i provjerite pogrešku koju prevoditelj prijavljuje.
             //brojevi = numbers;
 
