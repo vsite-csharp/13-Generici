@@ -6,18 +6,18 @@
         {
 
             // TODO:012 Inicijalizirati varijablu životinjskoCarstvo generičkom listom List<IŽivotinja>.
-            //var životinjskoCarstvo = ;
-            
-            // TODO:013 Otkomentirati donje naredbe te prevesti i pokrenuti program.
-            //životinjskoCarstvo.Add(new Sisavac());
-            //životinjskoCarstvo.Add(new Gmaz());
-            //životinjskoCarstvo.Add(new Riba());
-            //životinjskoCarstvo.Add(new Ptica());
+            var životinjskoCarstvo = new List<IŽivotinja>();
 
-            //foreach (var životinja in životinjskoCarstvo)
-            //{
-            //    životinja.PokreniSe();
-            //}
+            // TODO:013 Otkomentirati donje naredbe te prevesti i pokrenuti program.
+            životinjskoCarstvo.Add(new Sisavac());
+            životinjskoCarstvo.Add(new Gmaz());
+            životinjskoCarstvo.Add(new Riba());
+            životinjskoCarstvo.Add(new Ptica());
+
+            foreach (var životinja in životinjskoCarstvo)
+            {
+                životinja.PokreniSe();
+            }
         }
 
         // TODO:014 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSČlanovimaRazličitihTipova" mora proći)
