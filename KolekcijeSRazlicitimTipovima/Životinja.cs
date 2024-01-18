@@ -1,10 +1,13 @@
 ﻿namespace Vsite.CSharp.Generici
 {
 
-    // TODO:010 Definirati sučelje (interface) IŽivotinja s metodom void PokreniSe().
-
-    // TODO:011 U deklariracijama donjih klasa navesti da sve one implementiraju sučelje IŽivotinja.
-    class Sisavac
+    // 010 Definirati sučelje (interface) IŽivotinja s metodom void PokreniSe().
+    interface IŽivotinja
+    {
+        void PokreniSe();
+    }
+    // 011 U deklariracijama donjih klasa navesti da sve one implementiraju sučelje IŽivotinja.
+    class Sisavac : IŽivotinja
     {
         public void PokreniSe()
         {
@@ -12,7 +15,7 @@
         }
     }
 
-    class Gmaz
+    class Gmaz : IŽivotinja
     {
         public void PokreniSe()
         {
@@ -20,7 +23,7 @@
         }
     }
 
-    class Riba
+    class Riba : IŽivotinja
     {
         public void PokreniSe()
         {
@@ -28,7 +31,7 @@
         }
     }
 
-    class Ptica
+    class Ptica : IŽivotinja
     {
         public void PokreniSe()
         {

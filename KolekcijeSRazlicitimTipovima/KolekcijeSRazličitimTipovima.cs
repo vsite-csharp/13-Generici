@@ -5,22 +5,22 @@
         public static void MigracijaŽivotinja()
         {
 
-            // TODO:012 Inicijalizirati varijablu životinjskoCarstvo generičkom listom List<IŽivotinja>.
-            //var životinjskoCarstvo = ;
+            // 012 Inicijalizirati varijablu životinjskoCarstvo generičkom listom List<IŽivotinja>.
+            var životinjskoCarstvo = new List<IŽivotinja>();
             
-            // TODO:013 Otkomentirati donje naredbe te prevesti i pokrenuti program.
-            //životinjskoCarstvo.Add(new Sisavac());
-            //životinjskoCarstvo.Add(new Gmaz());
-            //životinjskoCarstvo.Add(new Riba());
-            //životinjskoCarstvo.Add(new Ptica());
+            // 013 Otkomentirati donje naredbe te prevesti i pokrenuti program.
+            životinjskoCarstvo.Add(new Sisavac());
+            životinjskoCarstvo.Add(new Gmaz());
+            životinjskoCarstvo.Add(new Riba());
+            životinjskoCarstvo.Add(new Ptica());
 
-            //foreach (var životinja in životinjskoCarstvo)
-            //{
-            //    životinja.PokreniSe();
-            //}
+            foreach (var životinja in životinjskoCarstvo)
+            {
+                životinja.PokreniSe();
+            }
         }
 
-        // TODO:014 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSČlanovimaRazličitihTipova" mora proći)
+        // 014 Pokrenuti i provjeriti testove (test u grupi "KolekcijeSČlanovimaRazličitihTipova" mora proći)
 
         static void Main()
         {
