@@ -29,7 +29,7 @@
             // TODO:003 dodati pozive metode DodajJelo za dvije osobe s imenima "Ivica" i "Marica" te proizvoljnim datumima rođenja.
 
             // TODO:004 Prevesti program, pokrenuti ga i provjeriti ispis.
-            // TODO:005 Pokrenuti i provjeriti testove (Oba testa u grupi "Kolekcije" moraju proći)
+            // TODO:005 Pokrenuti i provjeriti testove (Oba testa u grupi "GeneričkeKolekcije" moraju proći)
             jsv.IspišiDnevniMenu();
 
             Console.WriteLine("\nGOTOVO!!!");

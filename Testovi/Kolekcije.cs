@@ -1,7 +1,7 @@
 ﻿namespace Vsite.CSharp.Generici.Testovi
 {
     [TestClass]
-    public class GeneričkeKolekcije : ConsoleTest
+    public class GeneričKeKolekcije : ConsoleTest
     {
         [TestMethod]
         public void TestGeneričkaKolekcijeZaJednuOsobu()
@@ -10,7 +10,7 @@
             jsv.DodajJelo(new Osoba("Marica", DateTime.Now));
             jsv.IspišiDnevniMenu();
             Assert.IsTrue(cw?.Count == 1);
-            Assert.AreEqual("Ivica", cw.GetString());
+            Assert.AreEqual("Marica", cw.GetString());
         }
 
         [TestMethod]
